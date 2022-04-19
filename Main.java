@@ -20,24 +20,21 @@ public class Main{
 			Monster monster;
 			if(monsters[target].hp > 0){
 				//HPがあれば攻撃
-				monster = monsters[target];
+				monster = ;
 			}else{
 				//targetのHPが無ければもう片方を攻撃
-				monster = monsters[Math.abs(target-1)];
+				monster = ;
 			}
 			//勇者の攻撃
-			hero.attack(monster);
+
 			showHp(hero,monsters);
 			//モンスターを倒したかどうか確認
 			if(monster.hp <= 0){
-				System.out.printf("%sをたおした！%n%n",monster.name);
-				//showHp(hero,monsters);
+
 				monstersNum--;
 				//モンスターの群れ全滅
 				if(monstersNum == 0){
-					System.out.println();
-					System.out.println("モンスターをすべてたおした！");
-					return;
+					
 				}
 			}
 			//モンスターのターン
@@ -45,11 +42,11 @@ public class Main{
 			for(int i=0;i<monsters.length;i++){
 				//モンスターが生きてれば攻撃
 				if(monsters[i].hp > 0){
-					monsters[i].attack(hero);
-					//勇者がやられたか確認
+					
+					//勇者がやられた
 					if(hero.hp < 0){
 						showHp(hero,monsters);
-						System.out.printf("%sはやられてしまった・・・%n",hero.name);
+
 						return;
 					}
 					showHp(hero,monsters);
