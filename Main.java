@@ -31,7 +31,6 @@ public class Main{
 			//モンスターを倒したかどうか確認
 			if(monster.hp <= 0){
 				System.out.printf("%sをたおした！%n%n",monster.name);
-				//showHp(hero,monsters);
 				monstersNum--;
 				//モンスターの群れ全滅
 				if(monstersNum == 0){
