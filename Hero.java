@@ -1,9 +1,7 @@
 public class Hero{
-	String name;
-	int hp;
-	int attack;
+	//フィールド
+	
 	//コンストラクタ
-	Hero(String name){
-		this.name = name;
-	}
+	
+	//メソッド
 }
